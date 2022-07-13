@@ -9,4 +9,4 @@ COPY ./tools/www.conf /etc/php/7.3/fpm/pool.d
 COPY ./tools /var/www/
 
 
-CMD bash /var/www/start.sh
+ENTRYPOINT bash /var/www/start.sh

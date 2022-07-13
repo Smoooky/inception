@@ -29,8 +29,8 @@ fclean:	down
 		docker system prune -a --force
 		sudo rm -Rf /home/${USER}/data/db
 		sudo rm -Rf /home/${USER}/data/wp
-		mkdir /home/${USER}/data/db
-		mkdir /home/${USER}/data/wp
+		sudo mkdir /home/${USER}/data/db
+		sudo mkdir /home/${USER}/data/wp
 
 # Создавайте или перестраивайте сервисы
 re:

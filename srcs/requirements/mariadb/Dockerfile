@@ -5,4 +5,4 @@ COPY ./tools/50-server.cnf /etc/mysql/mariadb.conf.d/
 COPY ./tools/createdb.sql /var/www/
 EXPOSE 3306
 RUN service mysql start && mysql < /var/www/createdb.sql && rm -f /var/www/createdb.sql
-CMD /usr/bin/mysqld_safe
+ENTRYPOINT /usr/bin/mysqld_safe

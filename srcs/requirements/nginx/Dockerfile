@@ -8,4 +8,4 @@ EXPOSE 443
 COPY ./tools/default /etc/nginx/sites-enabled/default
 COPY ./tools/start.sh /var/www
 
-CMD bash /var/www/start.sh
+ENTRYPOINT bash /var/www/start.sh
